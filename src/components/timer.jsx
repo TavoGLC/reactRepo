@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import helpers from "./helperFunctions.js";
+import styles from "./styles.css";
 
 const divStyle = {
   color: "#F148FB",
@@ -7,6 +8,17 @@ const divStyle = {
   alignItems: "center",
   fontSize: "20px",
   textShadow: "1px 1px #00C2BA"
+};
+
+const buttonStyle = {
+  backgroundColor: "#f44336",
+  padding: "15px 32px",
+  margin: "4px 2px",
+  color: "white",
+  fontSize: "15px",
+  border: "none",
+  borderRadius: "8px",
+  boxShadow: "0px 3px 3px 0px white"
 };
 
 class Timer extends Component {
@@ -59,6 +71,7 @@ class Timer extends Component {
     } else {
       return (
         <button
+          style={buttonStyle}
           onClick={() => {
             this.startTimer();
             this.setState({ timerRunning: true });
@@ -75,6 +88,7 @@ class Timer extends Component {
     } else {
       return (
         <button
+          style={buttonStyle}
           onClick={() => {
             this.stopTimer();
             this.setState({ timerRunning: false });
@@ -87,28 +101,48 @@ class Timer extends Component {
   }
   lapAction() {
     if (this.state.timerRunning === true) {
-      return <button onClick={this.handleLap.bind(this)}>Lap</button>;
+      return (
+        <button style={buttonStyle} onClick={this.handleLap.bind(this)}>
+          Lap
+        </button>
+      );
     } else {
-      return <button style={{ color: "red" }}>Lap</button>;
+      return <button style={buttonStyle}>Lap</button>;
     }
   }
   resetAction() {
     if (this.state.timerRunning === false) {
-      return <button onClick={this.resetTimer.bind(this)}>Reset</button>;
+      return (
+        <button style={buttonStyle} onClick={this.resetTimer.bind(this)}>
+          Reset
+        </button>
+      );
     } else {
-      return <button style={{ color: "red" }}>Reset</button>;
+      return <button style={buttonStyle}>Reset</button>;
     }
   }
   timerState() {
     if (this.state.timerRunning === false) {
       return (
-        <h1 style={{ color: "white" }}>
+        <h1
+          style={{
+            color: "white",
+            fontFamily: "Century Gothic",
+            textShadow: "1px 1px 4px #F148FB"
+          }}
+        >
           {helpers.TimerFormat(this.state.count)}
         </h1>
       );
     } else {
       return (
-        <h1 style={{ color: helpers.CountToRGB(this.state.count) }}>
+        <h1
+          style={{
+            color: helpers.CountToRGB(this.state.count),
+            fontFamily: "Century Gothic",
+            textShadow: "4px 4px 5px #F148FB"
+          }}
+        >
           {helpers.TimerFormat(this.state.count)}
         </h1>
       );

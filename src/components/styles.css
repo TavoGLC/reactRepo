@@ -1,7 +1,7 @@
-divStyle {
+.baseStyle {
   color: "#F148FB";
   margin: "40px";
-  align-items: "center";
-  font-size: "20px";
-  text-shadow: "1px 1px #00C2BA";
+  alignitems: "center";
+  fontsize: "20px";
+  textshadow: "1px 1px #00C2BA";
 }
