@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,WACE,eAAgB,CAChB,aAAc,CACd,mBAAoB,CACpB,eAAgB,CAChB,4BACF","file":"main.acb7e4f1.chunk.css","sourcesContent":[".baseStyle {\r\n  color: \"#F148FB\";\r\n  margin: \"40px\";\r\n  alignitems: \"center\";\r\n  fontsize: \"20px\";\r\n  textshadow: \"1px 1px #00C2BA\";\r\n}\r\n"]}
