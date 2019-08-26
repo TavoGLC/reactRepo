@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/reactRepo/static/css/main.acb7e4f1.chunk.css",
-    "main.js": "/reactRepo/static/js/main.73799f5c.chunk.js",
-    "main.js.map": "/reactRepo/static/js/main.73799f5c.chunk.js.map",
+    "main.js": "/reactRepo/static/js/main.e2ed3027.chunk.js",
+    "main.js.map": "/reactRepo/static/js/main.e2ed3027.chunk.js.map",
     "runtime~main.js": "/reactRepo/static/js/runtime~main.53220a4e.js",
     "runtime~main.js.map": "/reactRepo/static/js/runtime~main.53220a4e.js.map",
     "static/js/2.6bd69417.chunk.js": "/reactRepo/static/js/2.6bd69417.chunk.js",
     "static/js/2.6bd69417.chunk.js.map": "/reactRepo/static/js/2.6bd69417.chunk.js.map",
     "index.html": "/reactRepo/index.html",
-    "precache-manifest.3a0259d836d0a9da16e6edd031cefa52.js": "/reactRepo/precache-manifest.3a0259d836d0a9da16e6edd031cefa52.js",
-    "service-worker.js": "/reactRepo/service-worker.js",
-    "static/css/main.acb7e4f1.chunk.css.map": "/reactRepo/static/css/main.acb7e4f1.chunk.css.map"
+    "precache-manifest.b5eff428a15f72c121d2890dd6285be8.js": "/reactRepo/precache-manifest.b5eff428a15f72c121d2890dd6285be8.js",
+    "service-worker.js": "/reactRepo/service-worker.js"
   }
 }
